@@ -36,3 +36,18 @@ for(let i=1;i<=100;i++){
     }
     $(".input-cell-container").append(row);
 }
+
+// formula bar 
+$(".align-icon").click(function(){
+    $(".align-icon.selected").removeClass("selected");
+    $(this).addClass("selected");
+})
+
+$(".style-icon").click(function(){
+    $(this).toggleClass("selected");
+})
+
+$(".input-cell").click(function(){
+    $(".input-cell.selected").removeClass("selected");
+    $(this).addClass("selected");
+})
