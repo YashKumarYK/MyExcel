@@ -91,16 +91,19 @@ body{
 .column-name-container{
     width: calc(100vw-30px);
     height: 30px;
+    display: flex;
     border: 1px solid lightgray;
 }
 
 .row-name-container{
     width: 30px;
     height:calc(75vh - 30px);
+    overflow:hidden ;
     border: 1px solid lightgray;
 }
 
 .input-cell-container{
+    overflow: hidden;
     width:calc(100vw - 30px);
     height: calc(75vh - 30px);
     border: 1px solid lightgray;
@@ -149,5 +152,36 @@ body{
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+
+
+.col-name{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    font-weight: "bold";
+
+}
+.row-name{
+    display: flex;
+    height:25px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-weight: "bold";
+
+}
+
+.cell-row{
+    height: 25px;
+    display:flex;
+}
+.input-cell{
+    min-width: 100px;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
 }
