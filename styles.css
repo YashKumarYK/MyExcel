@@ -92,7 +92,12 @@ body{
     width: 30px;
     border: 1px solid lightgray;
 }
+.inputcell-andcol{
+    overflow: hidden;
+}
+
 .column-name-container{
+    overflow:hidden;
     width: calc(100vw-30px);
     height: 30px;
     display: flex;
@@ -107,7 +112,7 @@ body{
 }
 
 .input-cell-container{
-    overflow: hidden;
+    overflow: scroll;
     width:calc(100vw - 30px);
     height: calc(75vh - 30px);
     border: 1px solid lightgray;
@@ -162,7 +167,7 @@ body{
 
 
 .col-name{
-    width: 100px;
+    min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
